@@ -29,6 +29,14 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
+@media (max-width: 950px) {
+    .container {
+      
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
 /* Intro */
 
 .intro {
@@ -110,8 +118,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__logo {
+    position: relative;
     font-size: 30px;
     font-weight: 700;
+    color: #fff;
+}
+
+.header__logo a {
+    position: relative;
+    padding-left: 60px;
+}
+
+.header__logo a::before {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../image/Logo_IT\ analytics.svg);
+    
+}
+
+.header__logo a {
     color: #fff;
 }
 
@@ -140,8 +170,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 1px;
     
-
-    background-color: blue;
+    background-color: #fff;
     opacity: 0;
 
     position: absolute;
@@ -154,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav__link:hover {
-    color: blue;
+        color: #fff;
 }
 
 .nav__link:hover::after {
@@ -182,19 +211,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn:hover {
-    background-color: #fff;
-    color: #333;
+    background-color: #24ADE4;
+    color: #fff;
 }
 
 .reverse {
-    border: 3px solid #333;
-    color: #333;
+    border: 3px solid #24ADE4;
+    color: #24ADE4;
     transition: background 0.1s
     linear, color 0.1s linear;
 }
 
 .reverse:hover {
-    background-color: #333;
+    background-color: #24ADE4;
     color: #fff;
 
 }
@@ -270,6 +299,24 @@ h1, h2, h3, h4, h5, h6 {
     background: url(../image/Logo_green_kassa.svg) no-repeat;
 }
 
+.about .ofd24 {
+    width: 80px;
+    height: 80px;
+    background: url(../image/logo_image.jpg) no-repeat;
+}
+
+.about .ikassa {
+    width: 80px;
+    height: 80px;
+    background: url(../image/logo_image.jpg) no-repeat;
+}
+
+.about .OnlineKassa {
+    width: 80px;
+    height: 80px;
+    background: url(../image/logo_image.jpg) no-repeat;
+}
+
 .about .ttc {
     width: 80px;
     height: 80px;
@@ -281,6 +328,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 80px;
     background: url(../image/Beeline2.svg) no-repeat;
 }
+
+
 
 .about__image img {
     width: 100%;
@@ -486,6 +535,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Feedback */
 
 .feedback {
+    padding: 20px 0px 150px 0px;
     width: 100%;
     max-width: 950px;
     margin: 0 auto 40px;
@@ -549,3 +599,9 @@ input {
     font-size: 15px;
 }
 
+@media (max-width: 960px) { 
+    .footer h2 {
+        font-size: 35px;
+        color: red;
+    }
+}
