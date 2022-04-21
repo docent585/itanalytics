@@ -302,19 +302,19 @@ h1, h2, h3, h4, h5, h6 {
 .about .ofd24 {
     width: 80px;
     height: 80px;
-    background: url(../image/logo_image.jpg) no-repeat;
+    background: url(../image/Logo_ikassa.svg) no-repeat;
 }
 
-.about .ikassa {
+.about .tis {
     width: 80px;
     height: 80px;
-    background: url(../image/logo_image.jpg) no-repeat;
+    background: url(../image/Logo_TIS.svg) no-repeat;
 }
 
 .about .OnlineKassa {
     width: 80px;
     height: 80px;
-    background: url(../image/logo_image.jpg) no-repeat;
+    background: url(../image/Logo_onlinekassa.svg) no-repeat;
 }
 
 .about .ttc {
