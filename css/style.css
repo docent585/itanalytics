@@ -211,8 +211,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn:hover {
-    background-color: #24ADE4;
-    color: #fff;
+    background-color: #fff;
+    color: #333;
 }
 
 .reverse {
@@ -329,8 +329,6 @@ h1, h2, h3, h4, h5, h6 {
     background: url(../image/Beeline2.svg) no-repeat;
 }
 
-
-
 .about__image img {
     width: 100%;
     height: auto;
@@ -339,6 +337,10 @@ h1, h2, h3, h4, h5, h6 {
 .about__item {
     display: flex;
     width: 30%;
+}
+
+.about__item:hover {
+    opacity: 0.7;
 }
 
 .about__text {
@@ -388,7 +390,6 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1200px;
     justify-content: space-between;
     margin: 50px auto 30px;
-
 }
 
 .service__img {
@@ -424,7 +425,6 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 
     transition: color 0.1s linear;
-
 }
 
 .service__link::after {
@@ -443,7 +443,6 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
 
     transition: opacity 0.1s linear;
-
 }
 
 .service__link:hover {
@@ -501,7 +500,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 100px 0;
+    padding: 10px 0 100px;
     margin: 0 auto; 
     width: 1200px;
     font-size: 15px;
@@ -516,7 +515,6 @@ h1, h2, h3, h4, h5, h6 {
 .education__img img {
     width: 100%;
     height: auto;
-    
 }
 
 .border {
@@ -529,18 +527,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .education__text {
     width: 600px;
-    
 }
 
 /* Feedback */
 
 .feedback {
-    padding: 20px 0px 150px 0px;
+    background-color: #F6F6F8;
+    padding: 50px 0px 50px 0px;
     width: 100%;
-    max-width: 950px;
-    margin: 0 auto 40px;
-
+    max-width: 750px;
+    margin: 0 auto 100px;
     text-align: center;
+    
 }
 
 .box form {
@@ -553,6 +551,7 @@ input {
     font-size: 20px;
     box-sizing: border-box;
     transition: 0.5s;
+    border-radius: 40px;
 }
 
 .input__wrap {
@@ -582,6 +581,66 @@ input {
     border: none;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px ;
+}
+
+
+/*Обратная связь*/
+
+.obratnuj-zvonok{
+	width: 100%;
+	max-width: 500px;
+    display: inline-block;
+ 
+}
+.form-zvonok{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 50px 20px;
+	box-sizing: border-box;
+    
+}
+.form-zvonok div{
+	padding: 10px 0;
+    
+}
+.bot-send-mail{
+	box-sizing: border-box;
+	width: 100%;
+    
+}
+.form-zvonok label,.form-zvonok input{
+display: block;
+width: 100%;
+box-sizing: border-box;
+}
+.form-zvonok label{
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+.form-zvonok input{
+	padding: 10px 15px;
+	margin-top: 5px;
+}
+.form-zvonok label span{
+	color: red;
+}
+.form-zvonok .bot-send-mail{
+	padding: 15px;
+	margin-top: 10px;
+background: none;
+border: none;
+text-transform: uppercase;
+color: #fff;
+	font-weight: bold;
+	background-color: #4985FF;
+	cursor: pointer;
+	border: 3px #4985FF solid;
+	border-radius: 40px;
+}
+.form-zvonok .bot-send-mail:hover{
+	color: #4985FF;
+	background-color: #fff;
 }
 
 /* Footer */
